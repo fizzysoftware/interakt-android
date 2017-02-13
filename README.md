@@ -7,6 +7,7 @@ An app/website that you are managing.
 A few minutes to get you started.
 
 Installation
+
 Step 1
 Download Interakt’s latest Andorid SDK here.
 
