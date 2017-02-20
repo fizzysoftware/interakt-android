@@ -1,15 +1,16 @@
 # interakt-android
 Android Sdk For Android
 
-You’ll need to install Interakt’s latest SDK for it to run smoothly on your Android application. Prerequisites
+You’ll need to install Interakt’s latest Android SDK for it to run smoothly on your Android application. Prerequisites:
+
 An Interakt account. You can get started for free!
-An app/website that you are managing.
+An Android Application that you are managing.
 A few minutes to get you started.
 
 Installation
 
 Step 1
-Download Interakt’s latest Andorid SDK here.
+Download Interakt’s latest Andorid SDK.
 
 Step 2
 Add the downloaded .aar file as an module in your project.
@@ -22,8 +23,6 @@ Step 3
 To add as a dependency of .aar in your project.
 Follow the steps given below :
 Go to your project structure, and add .aar module dependency in your project.
-
-
 Now wait untill the gradle build your project.
 
 Step 4
@@ -43,10 +42,15 @@ obj.installForApiKey(this, "YOUR INTERAKT APP ID");
 
 
 Step 6.
-Button on which you want to show FAQs add the code:
-obj.showFaqs(this);
+Add the folllowing code on the button on which you want to show FAQs - 
 
-Similarly, If you want to show HELPDESK on the button add the code:
+obj.showFaqs(this,backgroundcolortoshowque,ingridstyle);
+
+Here, the first argument is passed as reference of activity and in second argument we will pass the hexcode color of questions.
+You can pass blank string as well in second argument, in that case it will take the default color.
+In third argument we will pass boolean value to show the faqs, whether it is to be in grid or in listview.Pass true for gridview else false.
+
+Similarly, If you want to show HELPDESK, add the following code on the button: 
 
 obj.showHelpDesk(this,"#000000");
 
